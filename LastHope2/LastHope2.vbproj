@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6159E662-970B-4EE9-B25F-236D2A5CE4B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LastHope2.My.MyApplication</StartupObject>
+    <RootNamespace>LastHope2</RootNamespace>
+    <AssemblyName>LastHope2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LastHope2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LastHope2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySqlBackup">
+      <HintPath>D:\Downloads\MySqlBackup.NET_2.0.9.2\binaries\v4.5\MySqlBackup.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewRelation.Designer.vb">
+      <DependentUpon>AddNewRelation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewRelation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewSubLeader.Designer.vb">
+      <DependentUpon>AddNewSubLeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewSubLeader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreaMaster.Designer.vb">
+      <DependentUpon>AreaMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AreaMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeLeader.Designer.vb">
+      <DependentUpon>ChangeLeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeLeader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUser.Designer.vb">
+      <DependentUpon>CreateUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="database.vb" />
+    <Compile Include="EditRelation.Designer.vb">
+      <DependentUpon>EditRelation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditRelation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vow.Designer.vb">
+      <DependentUpon>Vow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartnerReport2.Designer.vb">
+      <DependentUpon>PartnerReport2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PartnerReport2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress.Designer.vb">
+      <DependentUpon>Progress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Progress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeaderMaster.Designer.vb">
+      <DependentUpon>LeaderMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LeaderMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewMainLeader.Designer.vb">
+      <DependentUpon>AddNewMainLeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewMainLeader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PartnerDetails.Designer.vb">
+      <DependentUpon>PartnerDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PartnerDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartnerReport.Designer.vb">
+      <DependentUpon>PartnerReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PartnerReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PleaseWait.Designer.vb">
+      <DependentUpon>PleaseWait.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PleaseWait.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrayerCategoryMaster.Designer.vb">
+      <DependentUpon>PrayerCategoryMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrayerCategoryMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrayerRequests.Designer.vb">
+      <DependentUpon>PrayerRequests.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrayerRequests.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressComplete.Designer.vb">
+      <DependentUpon>ProgressComplete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressComplete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PublicModule.vb" />
+    <Compile Include="RelationMaster.Designer.vb">
+      <DependentUpon>RelationMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RelationMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchLeaders.Designer.vb">
+      <DependentUpon>SearchLeaders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchLeaders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPartners.Designer.vb">
+      <DependentUpon>SearchPartners.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPartners.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewArea.Designer.vb">
+      <DependentUpon>ViewArea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewArea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCategory.Designer.vb">
+      <DependentUpon>ViewCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddNewRelation.resx">
+      <DependentUpon>AddNewRelation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewSubLeader.resx">
+      <DependentUpon>AddNewSubLeader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AreaMaster.resx">
+      <DependentUpon>AreaMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeLeader.resx">
+      <DependentUpon>ChangeLeader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUser.resx">
+      <DependentUpon>CreateUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRelation.resx">
+      <DependentUpon>EditRelation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartnerReport2.resx">
+      <DependentUpon>PartnerReport2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress.resx">
+      <DependentUpon>Progress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeaderMaster.resx">
+      <DependentUpon>LeaderMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewMainLeader.resx">
+      <DependentUpon>AddNewMainLeader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartnerDetails.resx">
+      <DependentUpon>PartnerDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartnerReport.resx">
+      <DependentUpon>PartnerReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PleaseWait.resx">
+      <DependentUpon>PleaseWait.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrayerCategoryMaster.resx">
+      <DependentUpon>PrayerCategoryMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrayerRequests.resx">
+      <DependentUpon>PrayerRequests.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressComplete.resx">
+      <DependentUpon>ProgressComplete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelationMaster.resx">
+      <DependentUpon>RelationMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchLeaders.resx">
+      <DependentUpon>SearchLeaders.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPartners.resx">
+      <DependentUpon>SearchPartners.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewArea.resx">
+      <DependentUpon>ViewArea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCategory.resx">
+      <DependentUpon>ViewCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vow.resx">
+      <DependentUpon>Vow.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\no-img.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\Checkmark-circle-blue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TableAndViewDefinitions.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
